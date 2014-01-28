@@ -1,3 +1,14 @@
+var model;
+
+module("Todo model test", {
+  setup: function() {
+  },
+
+  teardown: function() {
+  }
+});
+
+
 test('Todo has a title', function() {
   var todo = Todos.Todo.store.createRecord('todo', {title: 'My first todo'});
   var title = todo.get('title');
