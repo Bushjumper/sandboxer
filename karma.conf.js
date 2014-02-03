@@ -14,8 +14,9 @@ module.exports = function(karma) {
       "models/*.js",
       "controllers/*.js",
       "tests/models/*.js",
-      "tests/controllers/*.js"
-      // "tests/views/*.js"
+      "tests/controllers/*.js",
+      // "tests/views/*.js",
+      "tests/routes/*.js"
     ],
       
     logLevel: karma.LOG_ERROR,
