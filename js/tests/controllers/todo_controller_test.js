@@ -61,3 +61,10 @@ test("accepting changes entering an empty item title", function(){
   ok(model.save.notCalled, "model is not saved");
 });
 
+test("removing a todo item", function(){
+  this.spy(model, "deleteRecord");
+  this.spy(model, "save");
+  controller.send('removeTodo');
+  ok(model.deleteRecord.calledOnce, "model is deleted");
+  ok(model.save.notCalled, "model is not saved");
+});
