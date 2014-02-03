@@ -8,7 +8,6 @@ module("Todo model test", {
   }
 });
 
-
 test('Todo has a title', function() {
   var todo = Todos.Todo.store.createRecord('todo', {title: 'My first todo'});
   var title = todo.get('title');

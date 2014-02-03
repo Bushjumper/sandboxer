@@ -3,7 +3,6 @@ var model, controller;
 module("Todos controller test", {
   setup: function() {
     controller = Todos.__container__.lookup('controller:todos');
-    console.log(controller);
     model = Todos.Todo.store.createRecord('todo', {});
     controller.set('model', [model]);
   },
